@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "813-15ef01b4-hands-on-with-terraform-on-azure"
+  name     = "newRG"
   location = "westus"
 }
 
