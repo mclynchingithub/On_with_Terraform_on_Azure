@@ -13,13 +13,13 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "newRG"
+  name     = "813-15ef01b4-hands-on-with-terraform-on-azure"
   location = "westus"
 }
 
 module "securestorage" {
   source               = "app.terraform.io/clynch-pluralsight-lab/securestorage2/azurerm"
-  version              = "v1.0.0"
+  version              = "1.0.0"
   location             = azurerm_resource_group.rg.location
   resource_group_name  = azurerm_resource_group.rg.name
   storage_account_name = "tsstx123handonwithtfaz"
